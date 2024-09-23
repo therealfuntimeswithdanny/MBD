@@ -6,4 +6,4 @@ Hello, my name is Danny. You can view my photos here. I have always been into ph
 
 # More info
 #1 You may not download nor upload my photos.<br>
-#2 I Own all the rights to my photos
+#2 I own all the rights to my photos
