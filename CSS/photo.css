@@ -48,24 +48,7 @@ h1 {
   background-color: white;
   padding: 10px;
 }
-/* Content */
-.content1 {
-  background-color: white;
-  padding: 10px;
-  width: 100%;
-  text-align: center;
-}
-.content2 {
-  background-color: white;
-  padding: 10px;
-  width: 100%;
-}
-.content3 {
-  background-color: white;
-  padding: 10px;
-  width: 50%;
-  float: left;
-}
+
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
