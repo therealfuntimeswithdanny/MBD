@@ -1,9 +1,12 @@
-# MBD-Photos
-Note: This site is in beta. The linked url will be updated daily.
+# Made By Danny
+This repo is now the new MBDUK repo with a new url beta.madebydanny.
 --
-# About Me
-Hello, my name is Danny. You can view my photos here. I have always been into photography. The cameras I use are the Nikon D3100 and Nikon D3200. 
-
-# More info
-#1 You may not download nor upload my photos.<br>
-#2 I own all the rights to my photos
+# Basic info
+Powered By MBD CDN
+--
+# Photos
+You can view my photos with filtering
+# Blog Post
+You can view my blog post with fillerting
+# MBD PPTX
+You can view PowerPoints made by Danny

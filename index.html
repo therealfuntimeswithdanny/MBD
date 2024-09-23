@@ -12,7 +12,7 @@
 <body>
   <div class="main">
 
-    <h1>Photos By Danny</h1>
+    <h1>Made By Danny</h1>
 
     <hr>
     <div class="topnav">
@@ -21,19 +21,11 @@
      <a href="about.html"><i class="fa-solid fa-user"></i>About Me</a>
      <a href="photo.html"><i class="fa-regular fa-image"></i>Photos</a>
      <a href="photo.html"><i class="fa-solid fa-info"></i>Info</a>
-     <a style="float: right;" href="github.com/funtimeswithdanny"><i class="fa-brands fa-github"></i></a>
-     <a style="float: right;" href="https://www.youtube.com/@MadeByDanny"><i class="fa-brands fa-youtube"></i></a>
-     <a style="float: right;" href="https://discord.gg/yJDJdyauww"><i class="fa-brands fa-discord"></i></a>
-     <a style="float: right;" href="https://open.spotify.com/user/zg6ahzluemvxppvwgflgbeheg?si=3c68b06154484470"><i class="fa-brands fa-spotify"></i></a>
-     <a style="float: right;" href="https://www.twitch.tv/funtimeswithdanny"><i class="fa-brands fa-twitch"></i></a>
-     <a style="float: right;" href="https://steamcommunity.com/profiles/76561199436948636/"><i class="fa-brands fa-steam"></i></a>
-     <a style="float: right;" href="https://linktr.ee/funtimeswithdanny"><i class="fa-solid fa-link"></i></a>
-     <a style="float: right;" href="https://www.reddit.com/user/funtimeswithdanny/"><i class="fa-brands fa-reddit"></i></a>
-     <a style="float: right;" href="https://soundcloud.com/funtimeswithdanny"><i class="fa-brands fa-soundcloud"></i></a>
+
 
      </a>
     </div>
-    <h2>Shot On Nikon | Shot By Danny</h2>
+    <h2>All Made By Danny </h2>
     <div class="row">
         <div class="content2">
           <h4>About Me</h4>
@@ -88,58 +80,23 @@
       <hr>
     <div class="row">
       <div class="content1">
-        <h4>photo.madebydanny.uk</h4>
+        <h4>madebydanny.uk</h4>
         <p>Powerd By MBD CDN | Hosted In Github Pages | Images Copyright 2024 Daniel Morrisey</p>
+          <p><a href="github.com/funtimeswithdanny"><i class="fa-brands fa-github"></i></a></p>
+          <p><a href="https://www.youtube.com/@MadeByDanny"><i class="fa-brands fa-youtube"></i></a></p>
+          <p><a href="https://discord.gg/yJDJdyauww"><i class="fa-brands fa-discord"></i></a></p>
+          <p><a href="https://open.spotify.com/user/zg6ahzluemvxppvwgflgbeheg?si=3c68b06154484470"><i class="fa-brands fa-spotify"></i></a></p>
+          <p><a href="https://www.twitch.tv/funtimeswithdanny"><i class="fa-brands fa-twitch"></i></a></p>
+          <p><a href="https://steamcommunity.com/profiles/76561199436948636/"><i class="fa-brands fa-steam"></i></a></p>
+          <p><a href="https://linktr.ee/funtimeswithdanny"><i class="fa-solid fa-link"></i></a></p>
+          <p><a href="https://www.reddit.com/user/funtimeswithdanny/"><i class="fa-brands fa-reddit"></i></a></p>
+          <p><a href="https://soundcloud.com/funtimeswithdanny"><i class="fa-brands fa-soundcloud"></i></a></p>
+
       </div>
   </div>
-    </div>
     
     <!-- END MAIN -->
     </div>
     
 </body>
-<script>
-  filterSelection("all")
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("column");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-  }
-  
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-    }
-  }
-  
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);     
-      }
-    }
-    element.className = arr1.join(" ");
-  }
-  
-  
-  // Add active class to the current button (highlight it)
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-  </script>
+<script src="/Javascript/index.js"></script>
