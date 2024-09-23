@@ -1,0 +1,19 @@
+CACHE MANIFEST
+CACHE:
+#HTML pages
+index.html
+about.html
+info.html
+404.html
+#CSS Style pages
+/CSS/index.CSS
+/CSS/about.CSS
+/CSS/info.CSS
+/CSS/404.css
+# Javascript
+/Javascript/404.js
+FALLBACK:
+404.html
+
+NETWROK
+*
