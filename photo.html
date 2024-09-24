@@ -17,35 +17,58 @@
 
     <hr>
     <div class="topnav">
-      <a href="https://madebydanny.uk"><i class="fa-solid fa-arrow-left"></i>MBDUK</a>
-     <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
-     <a href="about.html"><i class="fa-solid fa-user"></i>About Me</a>
-     <a href="photo.html"><i class="fa-regular fa-image"></i>Photos</a>
-     <a href="photo.html"><i class="fa-solid fa-info"></i>Info</a>
-     <a style="float: right;" href="github.com/funtimeswithdanny"><i class="fa-brands fa-github"></i></a>
-     <a style="float: right;" href="https://www.youtube.com/@MadeByDanny"><i class="fa-brands fa-youtube"></i></a>
-     <a style="float: right;" href="https://discord.gg/yJDJdyauww"><i class="fa-brands fa-discord"></i></a>
-     <a style="float: right;" href="https://open.spotify.com/user/zg6ahzluemvxppvwgflgbeheg?si=3c68b06154484470"><i class="fa-brands fa-spotify"></i></a>
-     <a style="float: right;" href="https://www.twitch.tv/funtimeswithdanny"><i class="fa-brands fa-twitch"></i></a>
-     <a style="float: right;" href="https://steamcommunity.com/profiles/76561199436948636/"><i class="fa-brands fa-steam"></i></a>
-     <a style="float: right;" href="https://linktr.ee/funtimeswithdanny"><i class="fa-solid fa-link"></i></a>
-     <a style="float: right;" href="https://www.reddit.com/user/funtimeswithdanny/"><i class="fa-brands fa-reddit"></i></a>
-     <a style="float: right;" href="https://soundcloud.com/funtimeswithdanny"><i class="fa-brands fa-soundcloud"></i></a>
-
-     </a>
-     </a>
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="about.html"><i class="fa-solid fa-user"></i>About Me</a>
+      <a class="active" href="photo.html"><i class="fa-regular fa-image"></i>Photos</a>
+      <a href="blog.html"><i class="fa-solid fa-newspaper"></i>Blog</a>
+      <a href="pptx.html"><i class="fa-solid fa-person-chalkboard"></i>PPTX</a>
+      <a href="game.html"><i class="fa-solid fa-ellipsis-vertical"></i>Games</a>
+      <a href="cad.html"><i class="fa-solid fa-cube"></i>Cad</a>
+      <a href="info.html"><i class="fa-solid fa-info"></i>Info</a>
+ 
+      <div style="float: right;" class="dropdown">
+       <button class="dropbtn"><i class="fa-solid fa-screwdriver-wrench"></i>Tools 
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <div class="dropdown-content">
+         <a><button id="toggle-button"><i class="fa-solid fa-circle-half-stroke"></i>Toggle Mode</button></a>
+         <a><button id="translateButton"><i class="fa-solid fa-language"></i>Translate Site</button></a>
+         <div id="google_translate_element" style="display:none;"></div>
+         <a href="#">More Comming Soon!</a>
+       </div>
+     </div> 
+     <a style="float: right;" href="search.html"><i class="fa-solid fa-info"></i>Search</a>
+     <div style="float: right;" class="dropdown">
+       <button class="dropbtn"><i class="fa-solid fa-link"></i> 
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <div class="dropdown-content">
+         <a href="github.com/funtimeswithdanny"><i class="fa-brands fa-github"></i></a>
+         <a href="https://www.youtube.com/@MadeByDanny"><i class="fa-brands fa-youtube"></i></a>
+         <a href="https://discord.gg/yJDJdyauww"><i class="fa-brands fa-discord"></i></a>
+         <a href="https://open.spotify.com/user/zg6ahzluemvxppvwgflgbeheg?si=3c68b06154484470"><i class="fa-brands fa-spotify"></i></a>
+         <a href="https://www.twitch.tv/funtimeswithdanny"><i class="fa-brands fa-twitch"></i></a>
+         <a href="https://steamcommunity.com/profiles/76561199436948636/"><i class="fa-brands fa-steam"></i></a>
+         <a href="https://linktr.ee/funtimeswithdanny"><i class="fa-solid fa-link"></i></a>
+         <a href="https://www.reddit.com/user/funtimeswithdanny/"><i class="fa-brands fa-reddit"></i></a>
+         <a href="https://soundcloud.com/funtimeswithdanny"><i class="fa-brands fa-soundcloud"></i></a>
+       </div>
+     </div> 
+ 
+ 
+      </a>
     </div>
     <h2>Shot On Nikon | Shot By Danny</h2>
     <div class="row">
         <div class="content2">
-          <h4>About Me</h4>
-          <p>Lorem ipsum dolor..</p>
+          <h4>View My Photos</h4>
+          <p>The Camera I use is The Nikon D3200</p>
         </div>
     </div>
     
     <div id="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('nature')"> Flowers</button>
+      <button class="btn" onclick="filterSelection('flowers')"> Flowers</button>
       <button class="btn" onclick="filterSelection('cars')"> Landscape</button>
       <button class="btn" onclick="filterSelection('animals')"> Animals</button>
       <button class="btn" onclick="filterSelection('city')"> Cityscpaes</button>
@@ -54,30 +77,22 @@
 
     <!-- Portfolio Gallery Grid -->
     <div class="row">
-      <div class="content1">
-        <h4>Best Takes</h4>
-      </div>
-  </div>
-    <div class="row">
-      <div class="column nature">
+      <div class="column flowers">
         <div class="content">
-          <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-          <h4>Mountains</h4>
-          <p>Lorem ipsum dolor..</p>
+          <img src="https://mbduk-cdn.madebydanny.uk/Flowers/DSC_0164.JPG" alt="MBD CDN Error" style="width:100%">
+          <p>Date Shot: 8/24/2023 | Shot on Nkion D3100</p>
         </div>
       </div>
-      <div class="column nature">
+      <div class="column flowers">
         <div class="content">
-        <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-          <h4>Lights</h4>
-          <p>Lorem ipsum dolor..</p>
+        <img src="https://mbduk-cdn.madebydanny.uk/Flowers/DSC_2852.JPG" alt="MBD CDN Error" style="width:100%">
+          <p>Date Shot: 6/20/2024 | Shot On Nikon D3100</p>
         </div>
       </div>
-      <div class="column nature">
+      <div class="column flowers">
         <div class="content">
-        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-          <h4>Forest</h4>
-          <p>Lorem ipsum dolor..</p>
+        <img src="https://mbduk-cdn.madebydanny.uk/Flowers/DSC_3794.JPG" alt="MBD CDN Error" style="width:100%">
+          <p>Date Shot: 6/22/2024 | Shot On Nikon D3100</p>
         </div>
       </div>
       
