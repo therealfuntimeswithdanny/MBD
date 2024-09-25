@@ -96,3 +96,7 @@ function loadGoogleTranslate() {
     loadGoogleTranslate();
     document.getElementById('google_translate_element').style.display = 'block';
   });
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
