@@ -1,5 +1,5 @@
 # Made By Danny
-This repo is now the new MBDUK repo with a new url beta.madebydanny.
+This repo is now the new MBDUK repo with a new look.
 --
 # Basic info
 Powered By MBD CDN
