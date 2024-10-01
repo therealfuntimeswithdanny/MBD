@@ -9,12 +9,12 @@
 <script src="https://kit.fontawesome.com/0ca27f8db1.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/CSS/index.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZT332PH988"></script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
 <body>
   <div class="main">
 
     <h1>Made By Danny</h1>
-    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="funtimeswithdanny" data-color="#FF5F5F" data-emoji="☕"  data-font="Cookie" data-text="Keep this site ad free" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="funtimeswithdanny" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     <hr>
    <div class="topnav">
      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -31,8 +31,7 @@
       </button>
       <div class="dropdown-content">
         <a><button onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke"></i>Toggle dark mode</button></a>
-        <a><button id="translateButton"><i class="fa-solid fa-language"></i>Translate Site</button></a>
-        <div id="google_translate_element" style="display:none;"></div>
+        <a><div id="google_translate_element"></div> </a>
         <a href="#">More Comming Soon!</a>
       </div>
     </div> 
@@ -115,15 +114,21 @@
         <h4>madebydanny.uk</h4>
         <a href="https://www.buymeacoffee.com/funtimeswithdanny" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
         <p>Powerd By MBD CDN | Hosted In Github Pages | Images Copyright 2024 Daniel Morrisey</p>
-        <div class="topnav">
-         </a>
-        </div>
-
       </div>
-  </div>
+     </div>
     
     <!-- END MAIN -->
     </div>
+    <script type="text/javascript"> 
+
+      function googleTranslateElementInit() { 
+      
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element'); 
+      
+      } 
+      
+    </script> 
+      
 <script src="/Javascript/index.js"></script> 
 </body>
 </html>
