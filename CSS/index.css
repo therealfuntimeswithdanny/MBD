@@ -79,6 +79,7 @@ h1 {
   width: 50%;
   float: left;
   text-align: center;
+  padding: 8px;
 }
 /* The "show" class is added to the filtered elements */
 .show {
