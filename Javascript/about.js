@@ -74,8 +74,8 @@ filterSelection("all")
         body.classList.add('light-mode');
     }
   });
-  // Load the Google Translate API script
-  function loadGoogleTranslate() {
+// Load the Google Translate API script
+function loadGoogleTranslate() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
@@ -96,4 +96,8 @@ filterSelection("all")
     loadGoogleTranslate();
     document.getElementById('google_translate_element').style.display = 'block';
   });
-  
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
+ 

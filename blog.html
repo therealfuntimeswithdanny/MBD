@@ -2,27 +2,35 @@
 <html manifest="cache.manifest"
 <html lang="en">
 <head>
-<title>Made By Danny</title>
+<title>Danny's Blog</title>
 <link rel="icon" type="image/x-icon" href="https://mbduk-cdn.madebydanny.uk/icon.png">
 <meta charset="utf-8">
 <meta name="viewpoint" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/0ca27f8db1.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="/CSS/index.css">
+<link rel="stylesheet" href="/CSS/blog.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZT332PH988"></script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+   
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <body>
   <div class="main">
 
-    <h1>Made By Danny</h1>
+    <h1>Danny's Blog</h1>
 
     <hr>
    <div class="topnav">
-     <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="https://blog.madebydanny.uk"><i class="fa-solid fa-globe"></i>My Blog</a>
+     <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
      <a href="about.html"><i class="fa-solid fa-user"></i>About Me</a>
      <a href="photo.html"><i class="fa-regular fa-image"></i>Photos</a>
-     <a href="blog.html"><i class="fa-solid fa-newspaper"></i>Blog</a>
+     <a class="active" href="blog.html"><i class="fa-solid fa-newspaper"></i>Blog</a>
      <a href="pptx.html"><i class="fa-solid fa-person-chalkboard"></i>PPTX</a>
-     <a href="game.html"><i class="fa-solid fa-ellipsis-vertical"></i>Games</a>
+     <a href="game.html"><i class="fa-solid fa-gamepad"></i>Games</a>
      <a href="cad.html"><i class="fa-solid fa-cube"></i>Cad</a>
      <a href="info.html"><i class="fa-solid fa-info"></i>Info</a>
 
@@ -31,8 +39,8 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a><button id="toggle-button"><i class="fa-solid fa-circle-half-stroke"></i>Toggle Mode</button></a>
-        <a><button id="translateButton"><i class="fa-solid fa-language"></i>Translate Site</button></a>
+        <a><button onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke"></i>Toggle dark mode</button></a>
+        <a><div id="google_translate_element"></div></a>
         <div id="google_translate_element" style="display:none;"></div>
         <a href="#">More Comming Soon!</a>
       </div>
@@ -59,57 +67,37 @@
      </a>
    </div>
     <h2>All Made By Danny </h2>
-    <div class="row">
-        <div class="content2">
-          <h4>About Me</h4>
-          <p>Hello, I can see that you have found my little website that I have coded myself.<br>
-            My name is Danny that is why the site is called "Made by Danny"<br>
-            
-            I have always had an interest in tech. At the age of 11 I built my own computer (specs to the left) that i named "Billy".<br>
-            When i turned 12 i became the owner of madebydanny.uk and started coding this website. This site has fun games and videos, cool photos and more. <br>All here all Made by Danny.
-            </p>
-        </div>
-    </div>
-    <hr>
-    <div class="content1">
-      <h2>Recent Blog Post</h2>
-    </div>
-    <div class="row">
-      <div class="content3">
-       <h2>Microsft 365</h2>
-      </div>
-      <div class="content3">
-        <h2>Fitbit Charge 6</h2>
-       </div>
-    </div>
    <hr>  
-  <div class="content1">
-    <h2>Best Takes</h2>
-  </div>
-  <div class="row">
-    <div class="column nature">
-      <div class="content">
-        <img src="https://mbduk-cdn.madebydanny.uk/Flowers/DSC_0164.JPG" alt="MBD CDN Error" style="width:100%">
-        <h4>Yellow Bud</h4>
-        <p> Shot On Nikon D3100 | Date Shot 5/29/2024</p>
-      </div>
-    </div>
-    <div class="column nature">
-      <div class="content">
-      <img src="https://mbduk-cdn.madebydanny.uk/Flowers/DSC_3794.JPG" alt="MBD CDN Error" style="width:100%">
-        <h4>Duble Pink</h4>
-        <p> Shot On Nikon D3100 | Date Shot 7/4/2024</p>
-      </div>
-    </div>
-    <div class="column nature">
-      <div class="content">
-      <img src="https://mbduk-cdn.madebydanny.uk/DSC_3692.JPG" alt="MBD CDN Error" style="width:100%">
-        <h4>Long Beak</h4>
-        <p> Shot On Nikon D3100 | Date Shot 8/19/2024</p>
-      </div>
-    </div>
+   <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('hardware')"> Hardware</button>
+    <button class="btn" onclick="filterSelection('software')"> Software</button>
   </div>
 
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column hardware">
+      <div class="content">
+      <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+        <h4>Blog Name</h4>
+        <p>Date 1/1/1111</p>
+      </div>
+    </div>
+    <div class="column hardware">
+      <div class="content">
+      <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+        <h4>Blog Name</h4>
+        <p>Date 1/1/1111</p>
+      </div>
+    </div>
+    <div class="column hardware">
+      <div class="content">
+      <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+        <h4>Blog Name</h4>
+        <p>Date 1/1/1111</p>
+      </div>
+    </div>
+    
       <hr>
     <div class="row">
       <div class="content1">
@@ -117,14 +105,14 @@
         <p>Powerd By MBD CDN | Hosted In Github Pages | Images Copyright 2024 Daniel Morrisey</p>
         <div class="topnav">
          </a>
-        </div>
-
       </div>
+
+    </div>
   </div>
     
     <!-- END MAIN -->
     </div>
-<script src="/Javascript/index.js"></script> 
+<script src="/Javascript/blog.js"></script> 
 </body>
 </html>
 
