@@ -79,6 +79,7 @@ h1 {
   width: 50%;
   float: left;
   text-align: center;
+  padding: 8px;
 }
 /* The "show" class is added to the filtered elements */
 .show {
@@ -99,7 +100,7 @@ h1 {
 }
 
 .btn.active {
-  background-color: #666;
+  background-color: #fe7362;
   color: white;
 }
 .topnav{
@@ -122,7 +123,7 @@ h1 {
   color: black;
 }
 .active{
-  background-color: #666;
+  background-color: #fe7362;
 }
 
 .topnav .icon {

@@ -44,7 +44,7 @@ h1 {
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33%;
+  width: 33.33%;
   display: none; /* Hide all elements by default */
 }
 
@@ -100,7 +100,7 @@ h1 {
 }
 
 .btn.active {
-  background-color: #666;
+  background-color: #fe7362;
   color: white;
 }
 .topnav{
@@ -123,7 +123,7 @@ h1 {
   color: black;
 }
 .active{
-  background-color: #666;
+  background-color: #fe7362;
 }
 
 .topnav .icon {
