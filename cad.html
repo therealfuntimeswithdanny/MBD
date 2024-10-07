@@ -1,99 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html manifest="cache.manifest"
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-}
-.column100{
-    float: left;
-    width: 100%;
-    text-align: center;
-    background-color: #ddd;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-</style>
+<title>CAD Made By Danny</title>
+<link rel="icon" type="image/x-icon" href="https://mbduk-cdn.madebydanny.uk/icon.png">
+<meta charset="utf-8">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/0ca27f8db1.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/CSS/cad.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZT332PH988"></script>
 </head>
 <body>
 
 <!-- MAIN (Center website) -->
 <div class="main">
-
-<h1>MYLOGO.COM</h1>
+<h1>My Printables</h1>
+<div class="topnav">
+  <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a href="about.html"><i class="fa-solid fa-user"></i>About Me</a>
+  <a href="photo.html"><i class="fa-regular fa-image"></i>Photos</a>
+  <a href="blog.html"><i class="fa-solid fa-newspaper"></i>Blog</a>
+  <a href="pptx.html"><i class="fa-solid fa-person-chalkboard"></i>PPTX</a>
+  <a href="game.html"><i class="fa-solid fa-gamepad"></i>Games</a>
+  <a class="active" href="cad.html"><i class="fa-solid fa-cube"></i>Cad</a>
+  <a href="info.html"><i class="fa-solid fa-info"></i>Info</a>
+  <div style="float: right;" class="dropdown">
+   <button class="dropbtn"><i class="fa-solid fa-screwdriver-wrench"></i>Tools 
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content">
+     <a><button onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke"></i>Toggle dark mode</button></a>
+     <div id="google_translate_element"></div>  
+     <a href="index.html"><i class="fa-solid fa-spinner fa-spin"></i>Refresh For Newer Version</a>
+     <a href="info.html"><i class="fa-solid fa-wrench"></i>Version 3.1 [Stable]</a>
+     <a href="https://cdn.madebydanny.uk"><i class="fa-solid fa-cloud"></i>Powerd By MBD CDN</a>
+   </div>
+ </div> 
+ <div style="float: right;" class="dropdown">
+   <button class="dropbtn"><i class="fa-solid fa-link"></i> 
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content">
+     <a href="github.com/funtimeswithdanny"><i class="fa-brands fa-github"></i></a>
+     <a href="https://www.youtube.com/@MadeByDanny"><i class="fa-brands fa-youtube"></i></a>
+     <a href="https://discord.gg/yJDJdyauww"><i class="fa-brands fa-discord"></i></a>
+     <a href="https://open.spotify.com/user/zg6ahzluemvxppvwgflgbeheg?si=3c68b06154484470"><i class="fa-brands fa-spotify"></i></a>
+     <a href="https://www.twitch.tv/funtimeswithdanny"><i class="fa-brands fa-twitch"></i></a>
+     <a href="https://steamcommunity.com/profiles/76561199436948636/"><i class="fa-brands fa-steam"></i></a>
+     <a href="https://linktr.ee/funtimeswithdanny"><i class="fa-solid fa-link"></i></a>
+     <a href="https://www.reddit.com/user/funtimeswithdanny/"><i class="fa-brands fa-reddit"></i></a>
+     <a href="https://soundcloud.com/funtimeswithdanny"><i class="fa-brands fa-soundcloud"></i></a>
+     <a href="https://www.instagram.com/funtimeswithdanny/"><i class="fa-brands fa-instagram"></i></a>
+     <a href="https://www.threads.net/@funtimeswithdanny"><i class="fa-brands fa-threads"></i></a>
+   </div>
+ </div> 
+ <a style="float: right;" href="search.html"><i class="fa-solid fa-magnifying-glass"></i></i>Search</a>
+  </a>
+</div>
 <hr>
 
-<h2>PORTFOLIO</h2>
-<div class="column100">
-    <h2>Thanks To Printables For Makeing This Possable | View My Printables Profile</h2>
+<h2>Cad Made By Danny</h2>
+<div class="content2">
+    <h2>Thanks To Printables For Makeing This Possable | <a href="https://www.printables.com/@funtimeswith_2026319">View My Profile</a></h2>
  </div>
 
 <!-- Portfolio Gallery Grid -->
@@ -102,31 +70,45 @@ h1 {
     <div class="content">
       <img src="https://media.printables.com/media/prints/937272/previews/thumbs/cover/320x240/png/1253e66ba31172ed9823a0fb7bed88ac4fd245f1.webp" alt="media.printables.com can not be reached" style="width:100%">
       <h4>10" UniFi Express</h4>
-      <p><a href="mbdcdn download link"><i class="fa-solid fa-download"></i>Download</a></p>
+      <p><a href="https://mbduk-cdn.madebydanny.uk/Unifi%20Express.stl"><i class="fa-solid fa-download"></i>Download | </a><a href="https://www.printables.com/model/937272-10-unifi-express"><i class="fa-solid fa-square-up-right"></i>Open In Printables.com</a></p>
     </div>
   </div>
   <div class="column nature">
     <div class="content">
-    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
+      <img src="https://media.printables.com/media/prints/935743/previews/thumbs/inside/1280x960/png/29cf6ba54227a8135a2a18a54657834239ec288c.webp" alt="media.printables.com can not be reached" width="100%" height="228">
+      <h4>10" Mele Rackmount</h4>
+      <p><a href="https://mbduk-cdn.madebydanny.uk/Mele%20Mini%20PC.stl"><i class="fa-solid fa-download"></i>Download | </a><a href="https://www.printables.com/model/935743-mele-mini-pc"><i class="fa-solid fa-square-up-right"></i>Open In Printables.com</a></p>
     </div>
   </div>
   <div class="column nature">
     <div class="content">
-    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
+    <h3>More coming soon</h3>
     </div>
   </div>
 <!-- END GRID -->
 </div>
 
-<div class="column100">
+<div class="content2">
   <h2>Thanks To Printables For Makeing This Possable | <a href="https://printables.com"><i class="fa-solid fa-arrow-up-right-from-square"></i>View Printables Website</a></h2>
 </div>
+<hr>
+    <div class="row">
+      <div class="content1">
+        <h4>madebydanny.uk</h4>
+        <a href="https://www.buymeacoffee.com/funtimeswithdanny" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+        <p>Powerd By MBD CDN | Hosted In Github Pages | Images Copyright 2024 Daniel Morrisey</p>
+      </div>
+    </div>
 <!-- END MAIN -->
+ 
 </div>
-
+<script src="/Javascript/cad.js"></script> 
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
