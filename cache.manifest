@@ -5,14 +5,17 @@ index.html
 about.html
 info.html
 404.html
+cad.html
 #CSS Style pages
 /CSS/index.CSS
 /CSS/about.CSS
 /CSS/info.CSS
 /CSS/404.css
+/CSS/cad.css
 # Javascript
 /Javascript/404.js
-/Javascript/index.js
+index.js
+/Javascript/cad.js
 FALLBACK:
 404.html
 

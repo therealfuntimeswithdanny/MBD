@@ -102,6 +102,74 @@
 <!-- END MAIN -->
  
 </div>
+<div id="offline-popup" class="popup"> 
+
+  <h3>You are currently offline.</h3> 
+  
+  <p>If you allowed this site to save data to your drive<br> you may view the following pages.<br></p> 
+  
+  <p> Home | About Me<br>Blog Post can't be viewed becuase they require the internet.</p> 
+  
+  <button onclick="closePopup()">Close</button> 
+  
+  </div> 
+  
+   
+   
+  
+  <div id="online-popup1" class="popup1"> 
+  
+  <h3>Your online now!</h3> 
+  
+  <p>You may now visit any page.</p> 
+  
+  <button onclick="closePopup1()">Close</button> 
+  
+  </div> 
+<script>
+  window.addEventListener('offline', function() { 
+
+document.getElementById('offline-popup').style.display = 'block'; 
+
+}); 
+
+ 
+ 
+
+window.addEventListener('online', function() { 
+
+document.getElementById('offline-popup').style.display = 'none'; 
+
+}); 
+
+ 
+ 
+
+function closePopup() { 
+
+document.getElementById('offline-popup').style.display = 'none'; 
+
+} 
+
+ 
+ 
+ 
+
+window.addEventListener('online', function() { 
+
+document.getElementById('online-popup1').style.display = 'block'; 
+
+}); 
+
+ 
+ 
+
+function closePopup1() { 
+
+document.getElementById('online-popup1').style.display = 'none'; 
+
+} 
+</script>
 <script src="/Javascript/cad.js"></script> 
 <script type="text/javascript">
   function googleTranslateElementInit() {

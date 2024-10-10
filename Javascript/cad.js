@@ -103,21 +103,42 @@ function loadGoogleTranslate() {
  window.addEventListener('offline', function() { 
 
   document.getElementById('offline-popup').style.display = 'block'; 
-
-}); 
-
-
-
-window.addEventListener('online', function() { 
-
+  
+  }); 
+  
+   
+   
+  
+  window.addEventListener('online', function() { 
+  
   document.getElementById('offline-popup').style.display = 'none'; 
-
-}); 
-
-
-
-function closePopup() { 
-
+  
+  }); 
+  
+   
+   
+  
+  function closePopup() { 
+  
   document.getElementById('offline-popup').style.display = 'none'; 
-
-} 
+  
+  } 
+  
+   
+   
+   
+  
+  window.addEventListener('online', function() { 
+  
+  document.getElementById('online-popup1').style.display = 'block'; 
+  
+  }); 
+  
+   
+   
+  
+  function closePopup1() { 
+  
+  document.getElementById('online-popup1').style.display = 'none'; 
+  
+  } 
