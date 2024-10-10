@@ -12,6 +12,7 @@ info.html
 /CSS/404.css
 # Javascript
 /Javascript/404.js
+/Javascript/index.js
 FALLBACK:
 404.html
 
