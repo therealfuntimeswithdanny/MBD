@@ -23,45 +23,59 @@
     <h1>Danny's Blog</h1>
 
     <hr>
-   <div class="topnav">
-    <a href="https://blog.madebydanny.uk"><i class="fa-solid fa-globe"></i>My Blog</a>
-     <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
-     <a href="about.html"><i class="fa-solid fa-user"></i>About Me</a>
-     <a href="photo.html"><i class="fa-regular fa-image"></i>Photos</a>
-     <a class="active" href="blog.html"><i class="fa-solid fa-newspaper"></i>Blog</a>
-     <a href="pptx.html"><i class="fa-solid fa-person-chalkboard"></i>PPTX</a>
-     <a href="game.html"><i class="fa-solid fa-gamepad"></i>Games</a>
-     <a href="cad.html"><i class="fa-solid fa-cube"></i>Cad</a>
-     <a href="info.html"><i class="fa-solid fa-info"></i>Info</a>
-
+    <div class="topnav">
+      <div style="float: left;" class="dropdown">
+        <button class="dropbtn"><i class="fa-solid fa-globe"></i>MBD 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+         <a href="https://madebydanny.uk"><i class="fa-solid fa-globe"></i>MBD</a>
+         <a href="https://cdn.madebydanny.uk/pages/coming_soon.html"><i class="fa-solid fa-globe"></i>MBDUK</a>
+         <a href="https://cdn.madebydanny.uk"><i class="fa-solid fa-globe"></i>MBD CDN</a>
+         <a href="https://cdn.madebydanny.uk/pages/coming_soon.html"><i class="fa-solid fa-globe"></i>MBD DEV</a>
+         <a href="https://games.madebydanny.uk"><i class="fa-solid fa-globe"></i>MBD Games</a>
+        </div>
+      </div>  
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+      <a href="photo.html"><i class="fa-regular fa-image"></i>Photos</a>
+      <a class="active" href="blog.html"><i class="fa-solid fa-newspaper"></i>Blog</a>
+      <a href="pptx.html"><i class="fa-solid fa-person-chalkboard"></i>PPTX</a>
+      <a href="game.html"><i class="fa-solid fa-gamepad"></i>Games</a>
+      <a href="cad.html"><i class="fa-solid fa-cube"></i>Cad</a>
+      
+      <div style="float: right;" class="dropdown">
+        <button class="dropbtn"><i class="fa-solid fa-screwdriver-wrench"></i>Tools 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+         <a><button onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke"></i>Toggle dark mode</button></a>
+         <div id="google_translate_element"></div>  
+         <a href="index.html"><i class="fa-solid fa-spinner fa-spin"></i>Refresh For Newer Version</a>
+         <a href="info.html"><i class="fa-solid fa-wrench"></i>Version 3.5 [Stable]</a>
+         <a href="https://cdn.madebydanny.uk"><i class="fa-solid fa-cloud"></i>Powerd By MBD CDN</a>
+         <a href="https://cdn.madebydanny.uk/info.html"><i class="fa-solid fa-wrench"></i>CDN Version 1.2</a>
+         <a href="info.html"><i class="fa-solid fa-info"></i>Info</a>
+        </div>
+      </div> 
+     
+     
      <div style="float: right;" class="dropdown">
-      <button class="dropbtn"><i class="fa-solid fa-screwdriver-wrench"></i>Tools 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a><button onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke"></i>Toggle dark mode</button></a>
-        <a><div id="google_translate_element"></div></a>
-        <div id="google_translate_element" style="display:none;"></div>
-        <a href="#">More Comming Soon!</a>
-      </div>
-    </div> 
-    <a style="float: right;" href="search.html"><i class="fa-solid fa-info"></i>Search</a>
-    <div style="float: right;" class="dropdown">
-      <button class="dropbtn"><i class="fa-solid fa-link"></i> 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="github.com/funtimeswithdanny"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.youtube.com/@MadeByDanny"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://discord.gg/yJDJdyauww"><i class="fa-brands fa-discord"></i></a>
-        <a href="https://open.spotify.com/user/zg6ahzluemvxppvwgflgbeheg?si=3c68b06154484470"><i class="fa-brands fa-spotify"></i></a>
-        <a href="https://www.twitch.tv/funtimeswithdanny"><i class="fa-brands fa-twitch"></i></a>
-        <a href="https://steamcommunity.com/profiles/76561199436948636/"><i class="fa-brands fa-steam"></i></a>
-        <a href="https://linktr.ee/funtimeswithdanny"><i class="fa-solid fa-link"></i></a>
-        <a href="https://www.reddit.com/user/funtimeswithdanny/"><i class="fa-brands fa-reddit"></i></a>
-        <a href="https://soundcloud.com/funtimeswithdanny"><i class="fa-brands fa-soundcloud"></i></a>
-      </div>
-    </div> 
+       <button class="dropbtn"><i class="fa-solid fa-link"></i> 
+         <i class="fa fa-caret-down"></i>
+       </button>
+       <div class="dropdown-content">
+         <a href="github.com/funtimeswithdanny"><i class="fa-brands fa-github"></i></a>
+         <a href="https://www.youtube.com/@MadeByDanny"><i class="fa-brands fa-youtube"></i></a>
+         <a href="https://discord.gg/yJDJdyauww"><i class="fa-brands fa-discord"></i></a>
+         <a href="https://open.spotify.com/user/zg6ahzluemvxppvwgflgbeheg?si=3c68b06154484470"><i class="fa-brands fa-spotify"></i></a>
+         <a href="https://www.twitch.tv/funtimeswithdanny"><i class="fa-brands fa-twitch"></i></a>
+         <a href="https://steamcommunity.com/profiles/76561199436948636/"><i class="fa-brands fa-steam"></i></a>
+         <a href="https://linktr.ee/funtimeswithdanny"><i class="fa-solid fa-link"></i></a>
+         <a href="https://www.reddit.com/user/funtimeswithdanny/"><i class="fa-brands fa-reddit"></i></a>
+         <a href="https://soundcloud.com/funtimeswithdanny"><i class="fa-brands fa-soundcloud"></i></a>
+       </div>
+     </div> 
 
 
      </a>
