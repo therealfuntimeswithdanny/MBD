@@ -116,16 +116,31 @@ body {
   float: left;
   padding: 10px;
 }
-
-/* Left and right column */
-.column.side {
-  width: 66%;
-}
-
-/* Middle column */
-.column.middle {
+.col-side {
+  display: table-cell;
+  padding: 16px;
   width: 33%;
+
 }
+.col-25 {
+  display: table-cell;
+  padding: 16px;
+  width: 25%;
+
+}
+.col-50 {
+  display: table-cell;
+  padding: 16px;
+  width: 50%;
+
+}
+/* Left and right column */
+.column.side1 {
+  width: 66%;
+  display: table-cell;
+  padding: 16px;
+}
+
 /* Middle column */
 .column.half {
   width: 50%;
@@ -136,8 +151,9 @@ body {
 }
 .top{
   width: 100%;
-  background-color: black;
+  background-color: #ff9933;
   padding: 5px;
+  text-align: center;
 }
 
   .main {
@@ -160,6 +176,10 @@ body {
   a {
   color: black;
 }
+.col-container {
+  display: table;
+  width: 100%;
+}
 </style>
 </head>
 <body>
@@ -181,18 +201,22 @@ body {
     <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
     <a onclick="myFunction1()" id="myBtn" title="Dark Mode"><i class="fa-solid fa-circle-half-stroke"></i></a>
     <a href="#">|</a>
-    <a href="https://github.com/therealfuntimeswithdanny"><i class="fa-brands fa-github"></i></a>
+    <a><i class="fa-brands fa-reddit" style="color: #f9581d;"></i></a>
+    <a><i class="fa-brands fa-twitch" style="color: #9346ff;"></i></a>
+    <a><i class="fa-brands fa-youtube" style="color: #ff0033;"></i></a>
+    <a><i class="fa-brands fa-github" style="color: #262b2f;"></i></a>
+    <a><i class="fa-brands fa-instagram" style="color: #b997ee;"></i></a>
   </div>
   </div>
   <div class="floater">
     <div id="repoInfo">Connecting to api.github.com and Github Pages [IAU]</div>
 
       <script>
-          fetch('https://api.github.com/repos/therealfuntimeswithdanny/MBD-DEV')
+          fetch('https://api.github.com/repos/therealfuntimeswithdanny/MBD')
               .then(response => response.json())
               .then(data => {
                   const lastUpdated = new Date(data.updated_at).toLocaleString();
-                  document.getElementById('repoInfo').innerText = `Last Updated From Github Pages [IAU] at: ${lastUpdated}`;
+                  document.getElementById('repoInfo').innerText = `www.madebydanny.uk Was Last Updated From Github Pages [IAU] at: ${lastUpdated}`;
               });
       </script>
   </div>
@@ -200,16 +224,22 @@ body {
     <img src="/Designer.png" alt="MBD is going undergoing big changes" width="100%">
 
   </a>
-<div class="row">
-    <div  style="background-color:#f1f1f1;color:black;" class="column side1">
+<div class="col-container">
+    <div  style="background-color:#66a3ff;color:black;" class="col-side">
       <h2>MBD DEV is here</h2>
     MBD DEV has code snippets, Javascript tools.
     And we have pre-built website layouts, all of this can be downloaded for free. Our HTML Templates are made by RedJacket Web for MBD DEV.<br> I hope you find MBD DEV uesfull. 
   </div>
-  <div style="background-color:#ff6666;color:black;" class="column half">
-      <h1>Made By Danny</h1>
+  <div style="background-color:#ff6666;color:black;" class="col-side">
+    <h3>What is MBD</h3>
+<p>Hello, I can see that you have found my little website that I have coded myself.
+My name is Danny that is why the site is called "Made by Danny"<br>
+
+I have always had an interest in tech. At the age of 11 I built my own that i named "Billy".
+When I turned 12 I became the owner of madebydanny.uk and started coding this website. This site has fun games and videos, cool photos and more. All here all Made by Danny.
+</p>
     </div>
-  <div style="background-color:#f1f1f1;color: black;" class="column side1">
+  <div style="background-color:#ffff99;color: black;" class="col-side">
     <h2>Getting Started</h2>
     <p><a>Open Text Editor</a><br>The Text Editor that does store any data.<br> <br>
     <a>Open MBD PPTX</a><br>Awsome PowerPoints made for you Made By Danny.<br> <br>
@@ -218,22 +248,25 @@ body {
   
 </div>
 <hr>
-<div class="row">
-    <div style="background-color:#ff6666;color:black;" class="column side1">
-      <h2> Code Snippets</h2>
+<div class="top">
+  <h1>DEV Apps are here</h1>
+</div>
+<div class="col-container">
+    <div style="background-color:#ff6666;color:black;" class="col-25">
+      <h2>MBD Calculate</h2>
       <p><a href="code-snippets.html">Explore More</a> | <a href="https://www.w3schools.com/howto/default.asp">Open W3Schools How To</a></p>
       <p>Just like W3Schools How to MBD DEV also has code snippets for <b>HTML, CSS and Javascript</b>. We have <b>step-by-step</b> gudies on the basics of web devloping.
       All of this for free, All Made By Danny.</p>
     </div>
-    <div  style="background-color:#ff66cc;color:black;" class="column half">
-      <h2>Website Templates</h2>
+    <div  style="background-color:#ff66cc;color:black;" class="col-50">
+      <h2>Text Edit</h2>
       <p><a href="https://redjacket-web.madebydanny.uk/templates.html">Explore More</a> | <a href="https://redjacket-web.madebydanny.uk">Open RedJacket Web</a></p>
       <p>RedJacket Web has made awsmome HTML 5 Website Templates for MBD DEV you can evan uplaod your own template (your template must meet GitHub and MBD DEV Gudielines). Our Templates are free, you can download the code on github for free. To customize the template to how ever you want. 
       But make sure to keep "view on RedJakcet Web in Floater".</p>
     </div>
   
-  <div style="background-color:#66ffc2;color:black;" class="column side1">
-    <h2>MBD CSS is comming soon</h2>
+  <div style="background-color:#66ffc2;color:black;" class="col-25">
+    <h2>Mini Maps</h2>
     <p><a href="mbd-css.html">Explore More</a></p>
 <p>MBD CSS is a new framework like <a href="https://www.w3schools.com/w3css/default.asp">W3CSS</a> and <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Booststrap</a></p>
   </div>
