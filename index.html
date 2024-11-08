@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Made By Danny UK | MBD Team</title>
+<link rel="stylesheet" href="https://madebydanny.uk/style/madebydanny.uk.css">
 <script src="https://kit.fontawesome.com/0ca27f8db1.js" crossorigin="anonymous"></script>
 <link rel="icon" type="image/x-icon" href="https://mbduk-cdn.madebydanny.uk/icon.png">
 <style>
@@ -37,6 +38,12 @@ body {
   position: sticky;
   top: 0;
 }
+ .dark-mode .topnav {
+  overflow: hidden;
+  background-color: gray;
+  position: sticky;
+  top: 0;
+}
 
 .topnav a {
   float: left;
@@ -48,16 +55,22 @@ body {
   font-size: 17px;
 }
 
-.topnav a:hover {
+ .dark-mode .topnav a:hover {
+  background-color: burlywood;
+  color: black;
+}
+ .topnav a:hover {
   background-color: #ff4d94;
   color: black;
 }
-
 .topnav a.active {
   background-color: #ff80d5;
   color: white;
 }
-
+ .dark-mode .topnav a.active {
+  background-color: brown;
+  color: white;
+}
 .topnav .icon {
   display: none;
 }
@@ -173,6 +186,12 @@ body {
   padding: 5px;
   text-align: center;
 }
+.dark-mode .top{
+  width: 100%;
+  background-color: lightgoldenrodyellow;
+  padding: 5px;
+  text-align: center;
+}
 
   .main {
     max-width: 1300px;
@@ -214,7 +233,54 @@ body {
   background-color: #66ffc2;
 }
 
-
+.dropdown {
+    float: right;
+    overflow: hidden;
+  
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #fe7362;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
 </style>
 </head>
 <body>
@@ -225,16 +291,34 @@ body {
     <a>Photos</a>
     <a>Blog</a>
     <a> | </a>
-    <a href="https://redjacket-web.madebydanny.uk">DEV</a>
-    <a href="code-snippets.html">PPTX</a>
-    <a href="css.html">Apps</a>
+    <a href="https://dev.madebydanny.uk">DEV</a>
+    <a href="https://pptx.madebydanny.uk">PPTX</a>
+    <a href="/pages/apps.html">Apps</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   <div class="topnav-right">
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa-solid fa-screwdriver-wrench"></i>Google Translate 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div id="google_translate_element"></div>
+      </div>
+    </div> 
     <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>    
     <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
     <a onclick="myFunction1()" id="myBtn" title="Dark Mode"><i class="fa-solid fa-circle-half-stroke"></i></a>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa-solid fa-screwdriver-wrench"><i class="fa-solid fa-language"></i></i> 
+      </button>
+      <div class="dropdown-content">
+        <div id="google_translate_element"></div>
+      </div>
+    </div> 
+    <a href="#">|</a>
+    <a href="index.html"></a>
+    <a href="/pages/info.html"></a>
     <a href="#">|</a>
     <a href="https://reddit.com/r/MBD_Team"><i class="fa-brands fa-reddit" style="color: #f9581d;"></i></a>
     <a href="https://twitch.tv/funtimeswithdanny"><i class="fa-brands fa-twitch" style="color: #9346ff;"></i></a>
@@ -376,7 +460,13 @@ When I turned 12 I became the owner of madebydanny.uk and started coding this we
   <p>MBD Team | MBDUK | <a href="https://cloudflare.com">Secured By Cloudflare</a> | <a href="https://github.com">Hosted on GitHub Pages</a> | <a href="https://fontawesome.com">Icons By Fontawesome</a></p>
 </div>
 </div>
-
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script>
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
