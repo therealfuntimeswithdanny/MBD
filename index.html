@@ -159,6 +159,12 @@ body {
   width: 33%;
 
 }
+.col-66 {
+  display: table-cell;
+  padding: 16px;
+  width: 66%;
+
+}
 .col-15 {
   display: table-cell;
   padding: 16px;
@@ -287,6 +293,7 @@ body {
 <div class="main">
   <div class="topnav" id="myTopnav">
     <a href="/index.html" class="active"><i class="fa-solid fa-house"></i>Home</a>
+    <a> | </a>
     <a href="/pages/about.html">About</a>
     <a>Photos</a>
     <a>Blog</a>
@@ -297,14 +304,15 @@ body {
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-  <div class="topnav-right">
+    <a>| </a>
     <div class="dropdown">
-      <button class="dropbtn"><i class="fa-solid fa-language"></i></i> 
+      <button class="dropbtn"><i class="fa-solid fa-language"></i>
       </button>
       <div class="dropdown-content">
         <div id="google_translate_element"></div>
       </div>
     </div>
+  <div class="topnav-right">
     <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>    
     <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
     <a onclick="myFunction1()" id="myBtn" title="Dark Mode"><i class="fa-solid fa-circle-half-stroke"></i></a>
@@ -319,18 +327,23 @@ body {
     <a href="https://instagram.com/funtimeswithdanny"><i class="fa-brands fa-instagram" style="color: #b997ee;"></i></a>
   </div>
   </div>
-  <div class="floater">
-    <div id="repoInfo">Connecting to api.github.com and Github Pages [IAU]</div>
+<div class="col-container">
+  <div style="background-color: #cc66ff;" class="col-66">
+    <div id="repoInfo">Connecting to api.github.com & GitHub Pages</div>
 
       <script>
           fetch('https://api.github.com/repos/therealfuntimeswithdanny/MBD')
               .then(response => response.json())
               .then(data => {
                   const lastUpdated = new Date(data.updated_at).toLocaleString();
-                  document.getElementById('repoInfo').innerText = `www.madebydanny.uk Was Last Updated From Github Pages [IAU] at: ${lastUpdated}`;
+                  document.getElementById('repoInfo').innerText = `madebydanny.uk Was Last Updated From Github Pages at: ${lastUpdated}`;
               });
       </script>
   </div>
+  <div style="background-color: #cc66ff;" class="col-33">
+    <p id="latency">Connecting To Cloudflare</p>
+  </div>
+</div>
   <a href="https://updates.madebydanny.uk">
     <img src="/Designer.png" alt="MBD is going undergoing big changes" width="100%">
 
@@ -494,6 +507,23 @@ function myFunction1() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
+</script>
+<script>
+  function measureLatency() {
+      const start = Date.now();
+      fetch('https://www.cloudflare.com/cdn-cgi/trace')
+          .then(response => response.text())
+          .then(() => {
+              const latency = Date.now() - start;
+              document.getElementById('latency').innerText = `Performance & security by Cloudflare Latency: ${latency} ms`;
+          })
+          .catch(error => {
+              document.getElementById('latency').innerText = `Error: ${error}`;
+          });
+  }
+
+  measureLatency();
+  setInterval(measureLatency, 300);
 </script>
 </body>
 </html>
