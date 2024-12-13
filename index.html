@@ -1,50 +1,62 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Made By Danny UK | MBD Team</title>
-<link rel="stylesheet" href="https://madebydanny.uk/style/madebydanny.uk.css">
+<title>Made By Danny UK</title>
 <script src="https://kit.fontawesome.com/0ca27f8db1.js" crossorigin="anonymous"></script>
-<link rel="icon" type="image/x-icon" href="https://mbduk-cdn.madebydanny.uk/icon.png">
+<link rel="icon" type="image/x-icon" href="https://cdn.madebydanny.uk/logos/mbd.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+      a {
+  color: black;
+}
 * {
   box-sizing: border-box;
 }
-
+.dark-mode .floater{
+    background-color: gray;
+  padding: 3px;
+  text-align: center;
+  margin-left: 160px;
+}
 body {
   margin: 0;
-  background-color: white;
+  background-color: #f2f2f2;
 }
-.dark-mode {
-  margin: 0;
-  background-color: black;
-  color: aliceblue;
+/* Style the header */
+.header {
+  background-color: #ff6666;
+  padding: 20px;
+  text-align: center;
+  margin-left: 160px;
 }
-.dark-mode .floater{
-  width: 100%;
+.dark-mode .header{
   background-color: gray;
+  padding: 20px;
   text-align: center;
-  padding: 7px;
+  margin-left: 160px;
 }
-.floater{
-  width: 100%;
+.floater {
   background-color: #ff9933;
+  padding: 3px;
   text-align: center;
-  padding: 7px;
+  margin-left: 160px;
 }
 .topnav {
   overflow: hidden;
   background-color: #4d79ff;
   position: sticky;
   top: 0;
+  margin-left: 160px;
 }
- .dark-mode .topnav {
-  overflow: hidden;
-  background-color: gray;
+.dark-mode .topnav{
+    overflow: hidden;
+  background-color: black;
   position: sticky;
   top: 0;
+  margin-left: 160px;
 }
-
 .topnav a {
   float: left;
   display: block;
@@ -55,22 +67,16 @@ body {
   font-size: 17px;
 }
 
- .dark-mode .topnav a:hover {
-  background-color: burlywood;
-  color: black;
-}
- .topnav a:hover {
-  background-color: #ff4d94;
-  color: black;
-}
-.topnav a.active {
+.topnav a:hover {
   background-color: #ff80d5;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ff4d94;
   color: white;
 }
- .dark-mode .topnav a.active {
-  background-color: brown;
-  color: white;
-}
+
 .topnav .icon {
   display: none;
 }
@@ -124,406 +130,181 @@ body {
     transform: none;
   }
 }
-/* Create three unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
+p {
+    font-size: 15px;
 }
-.col-side {
-  display: table-cell;
-  padding: 16px;
-  width: 33%;
-
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4d79ff;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-.col-25 {
-  display: table-cell;
-  padding: 16px;
-  width: 25%;
-
+.dark-mode .sidenav{
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-.col-50 {
-  display: table-cell;
-  padding: 16px;
-  width: 50%;
-
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+    color: #f2f2f2;
+  display: block;
 }
-.col-35 {
-  display: table-cell;
-  padding: 16px;
-  width: 35%;
-
+.sidenav a  h3{
+  font-size: 17px;
 }
-.col-33 {
-  display: table-cell;
-  padding: 16px;
-  width: 33%;
-
-}
-.col-66 {
-  display: table-cell;
-  padding: 16px;
-  width: 66%;
-
-}
-.col-15 {
-  display: table-cell;
-  padding: 16px;
-  width: 15%;
-
-}
-/* Left and right column */
-.column.side1 {
-  width: 66%;
-  display: table-cell;
-  padding: 16px;
-}
-
-/* Middle column */
-.column.half {
-  width: 50%;
-}
-/* Middle column */
-.column.side1 {
-  width: 25%;
-}
-.top{
-  width: 100%;
-  background-color: #ff9933;
-  padding: 5px;
-  text-align: center;
-}
-.dark-mode .top{
-  width: 100%;
-  background-color: lightgoldenrodyellow;
-  padding: 5px;
-  text-align: center;
-}
-
-  .main {
-    max-width: 1300px;
-    margin: auto;
-  }
-  /* Clear floats after the columns */
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
-  }
-  a {
+.sidenav a:hover {
+  background-color: #ff80d5;
   color: black;
 }
-.col-container {
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+hr.new1 {
+  border: 2px solid #99b3ff;
+}
+.sidenav a.active {
+  background-color: #ff4d94;
+  color: white;
+}
+    .col-container {
   display: table;
   width: 100%;
 }
-.vertical-menu {
-  width: 300px;
+.col {
+  display: table-cell;
+  padding: 16px;
 }
-
-.vertical-menu a {
-  background-color: #9ce9dc;
-  color: black;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-}
-
-.vertical-menu a:hover {
-  background-color: #66ffc2;
-}
-
-.dropdown {
-    float: right;
-    overflow: hidden;
-  
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #fe7362;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-  }
+.main img {width: 100%; }
+.sidenav p { padding-left:5px; color: white; }
 </style>
 </head>
 <body>
-<div class="main">
-  <div class="topnav" id="myTopnav">
-    <a href="/index.html" class="active"><i class="fa-solid fa-house"></i>Home</a>
-    <a> | </a>
-    <a href="/pages/about.html">About</a>
-    <a>Photos</a>
-    <a>Blog</a>
-    <a> | </a>
-    <a href="https://dev.madebydanny.uk">DEV</a>
-    <a href="https://pptx.madebydanny.uk">PPTX</a>
-    <a href="/pages/apps.html">Apps</a>
+
+<div class="header">
+  <h1>Made By Danny</h1>
+    <p> A small website <b>Started by a 12 year old</b></p>
+</div>
+
+<div class="topnav">
+    <a class="active"href="https://madebydanny.uk/index.html">Home</a>
+    <a href="https://about.madebydanny.uk">About</a>
+    <a href="https://blog.madebydanny.uk">Blog</a>
+    <a href="https://photos.madebydanny.uk">Photos</a>
+    <a>|</a>
+    <a href="https://apps.madebydanny.uk">Apps</a>
+    <a href="https://dev.madebydanny.uk">MBD Developer</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-    <a>| </a>
-    <div class="dropdown">
-      <button class="dropbtn"><i class="fa-solid fa-language"></i>
-      </button>
-      <div class="dropdown-content">
-        <div id="google_translate_element"></div>
+    <div class="topnav-right">
+        <a href="https://search.madebydanny.uk"><i class="fa-solid fa-magnifying-glass"></i></a>    
+        <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
+        <a onclick="myFunction1()" id="myBtn" title="Dark Mode"><i class="fa-solid fa-circle-half-stroke"></i></a>
+        <a href="#">|</a>
+        <a href="https://links.madebydanny.uk"><i class="fa-solid fa-link"></i></a>
       </div>
-    </div>
-  <div class="topnav-right">
-    <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>    
-    <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></a>
-    <a onclick="myFunction1()" id="myBtn" title="Dark Mode"><i class="fa-solid fa-circle-half-stroke"></i></a>
-    <a href="#">|</a>
-    <a href="index.html"></a>
-    <a href="/pages/info.html"></a>
-    <a href="#">|</a>
-    <a href="https://reddit.com/r/MBD_Team"><i class="fa-brands fa-reddit" style="color: #f9581d;"></i></a>
-    <a href="https://twitch.tv/funtimeswithdanny"><i class="fa-brands fa-twitch" style="color: #9346ff;"></i></a>
-    <a href="https://youtube.com/@MadeByDanny"><i class="fa-brands fa-youtube" style="color: #ff0033;"></i></a>
-    <a href="https://github.com/therealfuntimeswithdanny"><i class="fa-brands fa-github" style="color: #262b2f;"></i></a>
-    <a href="https://instagram.com/funtimeswithdanny"><i class="fa-brands fa-instagram" style="color: #b997ee;"></i></a>
-  </div>
-  </div>
-<div class="col-container">
-  <div style="background-color: #cc66ff;" class="col-66">
-    <div id="repoInfo">Connecting to api.github.com & GitHub Pages</div>
-
-      <script>
-          fetch('https://api.github.com/repos/therealfuntimeswithdanny/MBD')
-              .then(response => response.json())
-              .then(data => {
-                  const lastUpdated = new Date(data.updated_at).toLocaleString();
-                  document.getElementById('repoInfo').innerText = `madebydanny.uk Was Last Updated From Github Pages at: ${lastUpdated}`;
-              });
-      </script>
-  </div>
-  <div style="background-color: #cc66ff;" class="col-33">
-    <p id="latency">Connecting To Cloudflare</p>
-  </div>
 </div>
-  <a href="https://updates.madebydanny.uk">
-    <img src="/Designer.png" alt="MBD is going undergoing big changes" width="100%">
-
-  </a>
-<div class="col-container">
-    <div  style="background-color:#66a3ff;color:black;" class="col-side">
-      <h2>MBD DEV is here</h2>
-    MBD DEV has code snippets, Javascript tools.
-    And we have pre-built website layouts, all of this can be downloaded for free. Our HTML Templates are made by RedJacket Web for MBD DEV.<br> I hope you find MBD DEV uesfull. 
-  </div>
-  <div style="background-color:#ff6666;color:black;" class="col-side">
-    <h3>What is MBD</h3>
-<p>Hello, I can see that you have found my little website that I have coded myself.
-My name is Danny that is why the site is called "Made by Danny"<br>
-
-I have always had an interest in tech. At the age of 11 I built my own that i named "Billy".
-When I turned 12 I became the owner of madebydanny.uk and started coding this website. This site has fun games and videos, cool photos and more. All here all Made by Danny.
-</p>
-    </div>
-  <div style="background-color:#ffff99;color: black;" class="col-side">
-    <h2>Getting Started</h2>
-    <p><a>Open Text Editor</a><br>The Text Editor that does store any data.<br> <br>
-    <a>Open MBD PPTX</a><br>Awsome PowerPoints made for you Made By Danny.<br> <br>
-  <a>Open MBD Games</a><br>Fun games Made By Danny.</p>
-  </div>
-  
-</div>
-<hr>
-<div class="top">
-  <h1>DEV Apps are here</h1>
-</div>
-<div class="col-container">
-    <div style="background-color:#ff6666;color:black;" class="col-25">
-      <h2>MBD Calculate</h2>
-      <p><a href="code-snippets.html">Explore More</a> | <a href="https://www.w3schools.com/howto/default.asp">Open W3Schools How To</a></p>
-      <p>Just like W3Schools How to MBD DEV also has code snippets for <b>HTML, CSS and Javascript</b>. We have <b>step-by-step</b> gudies on the basics of web devloping.
-      All of this for free, All Made By Danny.</p>
-    </div>
-    <div  style="background-color:#ff66cc;color:black;" class="col-50">
-      <h2>Text Edit</h2>
-      <p><a href="https://redjacket-web.madebydanny.uk/templates.html">Explore More</a> | <a href="https://redjacket-web.madebydanny.uk">Open RedJacket Web</a></p>
-      <p>RedJacket Web has made awsmome HTML 5 Website Templates for MBD DEV you can evan uplaod your own template (your template must meet GitHub and MBD DEV Gudielines). Our Templates are free, you can download the code on github for free. To customize the template to how ever you want. 
-      But make sure to keep "view on RedJakcet Web in Floater".</p>
-    </div>
-  
-  <div style="background-color:#66ffc2;color:black;" class="col-25">
-    <h2>Mini Maps</h2>
-    <p><a href="mbd-css.html">Explore More</a></p>
-<p>MBD CSS is a new framework like <a href="https://www.w3schools.com/w3css/default.asp">W3CSS</a> and <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Booststrap</a></p>
-  </div>
-  
-</div>
-<div class="top">
-  <h1>More Made By Danny</h1>
-</div>
-<div class="col-container">
-    <div style="background-color:#9ce9dc;color:black;" class="col-50">
-      <h2>Socials</h2>
-      <p>See more Made By Danny On Our Social Media</p>
-      <div class="vertical-menu">
-        <a><i class="fa-brands fa-reddit" style="color: #f9581d;"></i>Reddit</a>
-        <a><i class="fa-brands fa-twitch" style="color: #9346ff;"></i>Twitch</a>
-        <a><i class="fa-brands fa-youtube" style="color: #ff0033;"></i>YouTube</a>
-        <a><i class="fa-brands fa-github" style="color: #262b2f;"></i>GitHub</a>
-        <a><i class="fa-brands fa-instagram" style="color: #b997ee;"></i>Instagram</a>
-        <a href="https://photos.madebydanny.uk"><i class="fa-solid fa-camera-retro" style="color: #e2beb6;"></i>MBD Photos</a>
-        <a>View More on our Linktree</a>
-      </div>
-    </div>
-    <div  style="background-color:#ff6666;color:black;" class="col-35">
-      <h2>Photos</h2>
-      <p>Danny loves photography, that's why he is sharing his photos with the world on Instagram and on MBD Photos.</p>
-      <a href="https://photos.madebydanny.uk">
-        <img src="/Images/Designer.png" alt="click to open" width="100%">
-      </a>
-    </div>
-  
-  <div style="background-color:#66a3ff;color:black;" class="col-25">
-    <h2>Blog</h2>
-    <p>View my awsome blog on Reddit and MBD Blog for fee without any ads.</p>
-    <a href="https://photos.madebydanny.uk">
-      <img src="/Images/blog-poster.png" alt="click to open" width="100%">
-    </a>
-  </div>
-  
-</div>
-<div class="top">
-  <h1>MBD Services</h1>
-</div>
-<div class="col-container">
-    <div style="background-color:#66a3ff;color:black;" class="col-33">
-      <h2>MBD DEV</h2>
-      <p>MBD DEV has code snippets, Javascript tools. And we have pre-built website layouts, all of this can be downloaded for free. Our HTML Templates are made by RedJacket Web for MBD DEV.
-        I hope you find this site uesfull. And tell me waht you learned. <a href="https://www.threads.net/@funtimeswithdanny">Threads</a> and/or <a href="https://www.reddit.com/r/MBD_Team/">Reddit</a>.</p>
-    </div>
-    <div  style="background-color:#cc66ff;color:black;" class="col-33">
-      <h2>MBD PPTX</h2>
-      <p>MBD PPTX or MBD PowerPoint is a free online service Made By Danny. MBD PPTX has awesome PowerPoints Made By Danny all of this for free for life. You can Evan suggest/request Power Points.
-      </p>
-    </div>
-  
-  <div style="background-color:#ff66a3;color:black;" class="col-33">
-    <h2>DEV APPS</h2>
-    <p>MBD DEV APPS are simple but usefull apps for example MBD Text Edit is a basic but easy to use Text Editor and it's free not data being saved or sold. And Mini Maps a simple to use google maps interface. And so much more or comming.</p>
-  </div>
-  
-</div>
-<div class="top">
-
-</div>
-<div style="background-color:#9ce9dc;color:black;" class="top">
-
-  <h1>Cost</h1>
-</div>
-<div style="background-color:#9ce9dc;color:black;" class="top">
-  <p>Your first question proably is "How Much Does This Cost" there is not cost MBD Services are free and will be for life MBD Team will never ask for your credit card info. That way your card info is not at risk.</p>
+<div class="sidenav">
+    <p>Photo Site</p>
+    <img src="https://uptime.madebydanny.uk/api/badge/8/status?style=for-the-badge">
+    <p>MBD Developer</p>
+    <img src="https://uptime.madebydanny.uk/api/badge/9/status?style=for-the-badge">
+    <p>Blog</p>
+    <img src="https://uptime.madebydanny.uk/api/badge/7/status?style=for-the-badge">
+  <hr class="new1">
+  <a href="https://blog.madebydanny.uk"><h3>Blog</h3></a>
+  <a href="https://blog.madebydanny.uk">Five Reasons to Use Cloudflare</a>
+  <a href="https://blog.madebydanny.uk">Fibit Charge 6</a>
+  <a href="https://blog.madebydanny.uk">Tailscale Setup</a>
+  <hr class="new1">
+   <a href="#"><h3>MBD Apps</h3></a>
+  <a href="https://text-edit.madebydanny.uk">Text Edit</a>
+  <a href="https://weather.madebydanny.uk">MBD Weather</a>
+  <a href="https://time.madebydanny.uk">MBD Time</a>
+  <a href="https://math.madebydanny.uk">MBD Math</a>
+    <hr class="new1">
+  <a href="https://links.madebydanny.uk/pages/youtube"><h3>Videos</h3></a>
+       <a href="#">Navidrome Set-UP</a>
+        <a href="https://youtube.com/@MadeByDanny">View More...</a>
 </div>
 <div class="floater">
-  <p>MBD Team | MBDUK | <a href="https://cloudflare.com">Secured By Cloudflare</a> | <a href="https://github.com">Hosted on GitHub Pages</a> | <a href="https://fontawesome.com">Icons By Fontawesome</a></p>
+    <p><a href="https://madebydanny.uk">Made By Danny UK is now powered by <a href="https://online.madebydanny.uk">MBD Online</a></p>
 </div>
+<div class="main">
+    <a href="https://blog.madebydanny.uk">
+        <img src="https://cdn.madebydanny.uk/mbd/Designer.png">
+    </a>
+    <a href="https://photos.madebydanny.uk">
+        <img src="https://cdn.madebydanny.uk/mbd/Designer%20(2).png">
+    </a>
+    <a href="https://dev.madebydanny.uk">
+        <img src="https://cdn.madebydanny.uk/mbd/Designer%20(1).png">
+    </a>
+    <a href="htps://weather.madebydanny.uk">
+        <img src="https://cdn.madebydanny.uk/mbd/Designer%20(4).png">
+    </a>
+    <a href="htps://text-edit.madebydanny.uk">
+        <img src="https://cdn.madebydanny.uk/mbd/Designer%20(3).png">
+    </a>
 </div>
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-  }
-  </script>
-  
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<div class="floater">
+    <p><a>&#169; Made By Danny</a> | Performance & Security by <a href="https://cloudflare.com">Cloudflare</a> | <a>Content By MBD CDN</a></p>
+</div>
 <script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
     }
-  }
-  // Get the button
-let mybutton = document.getElementById("myBtn");
-
-
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-function myFunction1() {
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    function myFunction1() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
 </script>
-<script>
-  function measureLatency() {
-      const start = Date.now();
-      fetch('https://www.cloudflare.com/cdn-cgi/trace')
-          .then(response => response.text())
-          .then(() => {
-              const latency = Date.now() - start;
-              document.getElementById('latency').innerText = `Performance & security by Cloudflare Latency: ${latency} ms`;
-          })
-          .catch(error => {
-              document.getElementById('latency').innerText = `Error: ${error}`;
-          });
-  }
-
-  measureLatency();
-  setInterval(measureLatency, 300);
-</script>
-</body>
-</html>
