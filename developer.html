@@ -86,11 +86,10 @@ li .active {
   text-align: center;
 }
 .thrid {
-  float: left;
-  width: 33%;
-  height: auto;  
+  display: table-cell;
+  padding: 16px;
   color: white;
-  min-height: 700px;
+  min-height: 455px;
 }
 .thrid h2 {
   padding-left: 20px;
@@ -106,9 +105,8 @@ li .active {
   text-align: center;
 }
 .half {
-  float: left;
-  width: 50%;
-  height: auto;  
+  display: table-cell;
+  padding: 16px;
   color: white;
   min-height: 455px;
 }
@@ -131,12 +129,12 @@ li .active {
 }
 .thrid open {
   background-color: #ff6666;
-  border-radius: 20px 20px 20px 0px;
+  border-radius: 20px 20px 20px 20px;
   padding: 10px;
   font-size: 30px;
   margin-top: -20px;
   width: auto;
-  border: 2px solid black;
+  border: 4px solid #ff4d94;
 }
 a { text-decoration: none;}
 hr {
@@ -182,6 +180,10 @@ P {color: white}
   background-color: #4d79ff;
   border: 2px solid #ff4d94;
 }
+.col-half {
+  display: table;
+  width: 100%;
+}
 </style>
 </head>
 <body>
@@ -205,7 +207,7 @@ P {color: white}
     <open><a href="https://developer.madebydanny.uk/pages/code-snippets">Start Now</a></open>
   </div>
   <br>
-  <div class="row">
+  <div class="col-half">
     <div style="background-color: #ff6666; border-radius: 20px 0px 0px 20px;" class="half">
       <h2>Free For Life</h2>
     </div>
@@ -216,6 +218,7 @@ P {color: white}
         While adopting a paid plan may seem like a viable option, it would require us to implement additional infrastructure and architecture to support secure database storage and Node.js integration on our site. Unfortunately, this would likely result in increased page loading times, which could negatively impact the overall user experience.
         <br>
         By maintaining our free services, we can ensure that MBD Developer remains a trusted and reliable platform for developers of all levels, without compromising their security or performance."</p>
+    </div>
   </div>
   <p>Hidden Text</p>
   <div class="row">
