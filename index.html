@@ -86,9 +86,8 @@ li .active {
   text-align: center;
 }
 .thrid {
-  float: left;
-  width: 33%;
-  height: auto;  
+  display: table-cell;
+  padding: 16px;
   color: white;
   min-height: 700px;
 }
@@ -105,10 +104,13 @@ li .active {
   font-size: 20px;
   text-align: center;
 }
+.col-half {
+  display: table;
+  width: 100%;
+}
 .half {
-  float: left;
-  width: 50%;
-  height: auto;  
+  display: table-cell;
+  padding: 16px;
   color: white;
   min-height: 455px;
 }
@@ -182,17 +184,28 @@ P {color: white}
   background-color: #4d79ff;
   border: 2px solid #ff4d94;
 }
+open-black {
+  float: right;
+  background-color: white;
+  border-radius: 25px;
+  font-size: 70px;
+  color:black;
+  margin-top: -70px;
+}
+open-black a {
+  color: black;
+}
 </style>
 </head>
 <body>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <ul>
     <li><a class="active" href="https://madebydanny.uk">Made By Danny</a></li>
-    <li><a href="/pages/code-snippets.html">Luna</a></li>
-    <li><a href="/pages/markdown.html">Developer</a></li>
-    <li><a href="https://ai.madebydanny.co.uk">Forum</a></li>
-    <li><a href="/pages/search.html">Blog</a></li>
-    <li><a href="/pages/search.html">Photos</a></li>
+    <li><a href="https://ai.madebydanny.co.uk">Luna</a></li>
+    <li><a href="https://devloper.madebydanny.uk">Developer</a></li>
+    <li><a href="https://forum.madebydanny.uk">Forum</a></li>+
+    <li><a href="https://blog.madebydanny.uk">Blog</a></li>
+    <li><a href="https://photos.madebydanny.uk">Photos</a></li>
     <li><a> | </a></li>
     <li><a href="https://links.madebydanny.uk/pages/github"><i class="fa-brands fa-github"></i></a></li>
     <li><a href="https://links.madebydanny.uk/pages/github"><i class="fa-brands fa-reddit"></i></a></li>
@@ -205,22 +218,31 @@ P {color: white}
     <open><a href="https://forum.madebydanny.uk">Visit our Forum</a></open>
   </div>
   <br>
-  <div class="row">
+  <p>Hidden Text</p>
+  <div class="col-half">
     <div style="background-color: #ff6666; border-radius: 20px 0px 0px 20px;" class="half">
-      <h2>Free For Life</h2>
+      <h2>Who Is Danny</h2>
     </div>
     <div style=" background-color: #ff4d94; border-radius: 0px 20px 20px 0px;" class="half">
-      <p>
-        "At MBD Developer, we are committed to maintaining the integrity of our platform by ensuring that our core services remain freely accessible. This approach eliminates the need for users to compromise their personal security by sharing sensitive financial information such as credit card details.
-        <br>
-        While adopting a paid plan may seem like a viable option, it would require us to implement additional infrastructure and architecture to support secure database storage and Node.js integration on our site. Unfortunately, this would likely result in increased page loading times, which could negatively impact the overall user experience.
-        <br>
-        By maintaining our free services, we can ensure that MBD Developer remains a trusted and reliable platform for developers of all levels, without compromising their security or performance."</p>
+      <p>Danny or Thereal/Funtimeswithdanny was born in 2011. Ever since I was a kid I had a love 
+        for technology. At the age of 12 I Built my first computer named “Billy” (view parts) 
+        following Linus Tech Tips Tutorial. Then I bought the domain madebydanny.uk in June. 
+        In December I bought the domain madebydanny.co.uk. Over the summer of 2024 I started
+         to learn more about HTML, CSS and JavaScript. Following Techno Time Videos and W3 Schools 
+         web tutorials. </p>
+    </div>
   </div>
   <p>Hidden Text</p>
-  <div class="row">
+  <div style="background-color: black;" class="main">
+    <h1>Luna<br>Is Here</h1>
+    <h3>Powerd By our own <br>MBD Luna AI Model</h3>
+    <p>Luna is powerd by llama 3</p>
+    <open-black><a href="https://ai.madebydanny.uk">Chat With Luna</a></open>
+  </div>
+  <p>Hidden Text</p>
+  <div class="col-half">
     <div style="background-color: #4d79ff; border-radius: 20px 0px 0px 20px;" class="thrid">
-      <open><a>Developer languages</a></open>
+      <open><a>More Made By Danny</a></open>
       <h2>HTML</h2>
       <p>
         HTML (Hypertext Markup Language) is a standard markup language used to create web pages.
