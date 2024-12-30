@@ -10,7 +10,7 @@
 <style> 
 .main {
   border-radius: 25px;
-  background: #ff99ff;
+  background: #ff4d94;
   width: auto;
   height: auto;  
   color: white;
@@ -39,12 +39,11 @@
 }
 
 .half {
-  float: left;
   background: #fe7362;
-  width: 50%;
-  height: auto;  
   color: white;
   min-height: 400px;
+  display: table-cell;
+  padding: 16px;
 }
 
 .half h2 {
@@ -121,7 +120,7 @@ li a:not(.active) {
 }
 
 li a:hover {
-  background-color: #ff99ff;
+  background-color: #ff4d94;
   color: white;
 }
 li .active {
@@ -133,6 +132,27 @@ li .active {
   border-radius: 20px;
   font-size: 25px;
   border: 2px solid white;
+}
+.info {
+  border-radius: 25px;
+  background: #ff4d94;
+  width: auto;
+  height: auto;  
+  color: white;
+  padding: 15px;
+}
+.info h1 {
+  text-align: center;
+}
+.info h2 {
+  text-align: center;
+}
+.info p {
+  text-align: center;
+}
+.col {
+  display: table;
+  width: 100%;
 }
 </style>
 </head>
@@ -157,7 +177,7 @@ li .active {
     <open><a href="https://ai.madebydanny.uk">(once done go to blog/list.html)</a></open>
   </div>
   <br>
-  <div class="row">
+  <div class="col-half">
     <div style="border-radius: 20px 0px 0px 20px;" class="half">
       <h2>Monthly* Blogs</h2>
       <p>MBD AI is powerd by a Intel 12th Gen I7 with Ollama and Open Web UI In Docker. Open Web UI gives you the user a nice UI to Interface with our AI modles.</p>
@@ -171,63 +191,34 @@ li .active {
   <p>Hidden Text</p>
   <div class="col-half">
     <div style="border-radius: 20px 0px 0px 20px;" class="thrid">
-      <open><a>Monthly Blogs</a></open>
-      <h2 id="llms">Fast And Smart</h2>
-      <p>MBD AI is powered by posable by Open Source LLMs. A LLM or large langue model is the AI model you the user is using. 
-        For Example, if you need help with your code, you chose codegemma because it is designed to help users with code and how to explain it.
-      MBD AI only has 2 LLMs publicly available, llama 3 and codegemma.</p>
+      <open><a>Dayilt </a></open>
+      <h2>Fitbit Charge 6</h2>
+      <p>My birthday was last week (Aug. 23) one of the gifts I got was Fitbit Charge 6.
+         I have had a Fitbit before (the Charge 5) over time the battery started to 
+         lose its charge to the point where the battery stopped being able to keep a 
+         charge that was about a year ago.</p>
     </div>
     <div style="border-radius: 0px;" class="thrid">
-     <h2>llama 3</h2>
-     <p>LLaMA-3 is a large language model developed by Meta AI, capable of generating 
-      human-like text based on input prompts. It has been trained on a massive dataset
-       of internet text and can understand and generate text in multiple languages. 
-       The model can be fine-tuned for specific tasks such as text classification, 
-       sentiment analysis, language translation, and chatbot applications.<br> - MBD AI llama 3
-     </p>
+     <h2>Five reasons why you need to use Cloudflare</h2>
+     <p>Cloudflare was founded in July 2009 by three co-founders: Matthew Prince,
+         Lee Holloway, and Michelle Zatlyn. Cloudflare is best known for its DNS and CDN.
+          In this blog post i will give you five reasons you need to start using Cloudflare.</p>
     </div>
     <div style="border-radius: 0px 20px 20px 0px;" class="thrid">
-      <h2>Codegemma</h2>
-      <p>
-        CodeGemma is an AI-powered coding companion developed by Meta AI that helps 
-        software developers with tasks such as code completion, generation, 
-        refactoring, bug detection, and code review. The model uses a 
-        transformer-based architecture and was trained on a massive dataset of
-         open-source code from various programming languages. By assisting with 
-         these tasks, CodeGemma aims to improve the efficiency and accuracy of 
-         software development workflows.<br>-llama 3
-      </p>
+      <h2>The Honey Scam</h2>
+      <p>Comming Soon</p>
     </div>
   </div>
   <p>Make part below 25% wudth and show 2 imges and 2 text boxs </p>
-  <div class="col-half">
-    <div style="border-radius: 20px 0px 0px 20px;" class="thrid">
-      <open><a>Monthly Blogs</a></open>
-      <h2 id="llms">Fast And Smart</h2>
-      <p>MBD AI is powered by posable by Open Source LLMs. A LLM or large langue model is the AI model you the user is using. 
-        For Example, if you need help with your code, you chose codegemma because it is designed to help users with code and how to explain it.
-      MBD AI only has 2 LLMs publicly available, llama 3 and codegemma.</p>
-    </div>
-    <div style="border-radius: 0px;" class="thrid">
-     <h2>llama 3</h2>
-     <p>LLaMA-3 is a large language model developed by Meta AI, capable of generating 
-      human-like text based on input prompts. It has been trained on a massive dataset
-       of internet text and can understand and generate text in multiple languages. 
-       The model can be fine-tuned for specific tasks such as text classification, 
-       sentiment analysis, language translation, and chatbot applications.<br> - MBD AI llama 3
-     </p>
-    </div>
-    <div style="border-radius: 0px 20px 20px 0px;" class="thrid">
-      <h2>Codegemma</h2>
-      <p>
-        CodeGemma is an AI-powered coding companion developed by Meta AI that helps 
-        software developers with tasks such as code completion, generation, 
-        refactoring, bug detection, and code review. The model uses a 
-        transformer-based architecture and was trained on a massive dataset of
-         open-source code from various programming languages. By assisting with 
-         these tasks, CodeGemma aims to improve the efficiency and accuracy of 
-         software development workflows.<br>-llama 3
-      </p>
+  <div class="main">
+    <h1>Daily Post</h1>
+    <open><a href="https://logs.madebydanny.uk">Open MBD Logs</a></open>
+  </div>
+    <p>More Hidden Text</p>
+    <div class="info">
+      <h1>Made By Danny</h1>
+      <h2>&copy 2025 Made By Danny UK | <a href="https://cloudflare.com">Performance & Security by Cloudflare</a></h2>
+      <p><a>YouTube</a> | <a>Github</a> | <a>Twitch</a> | <a>Reddit</a></p>
     </div>
   </div>
 </body>
