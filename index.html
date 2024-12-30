@@ -210,10 +210,25 @@ open-black a {
   background-color: white;
 }
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .full {
     max-width: 400px;
   }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  ul {
+  list-style-type: none;
+  margin-left: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4d79ff;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
 }
 </style>
 </head>
