@@ -205,10 +205,6 @@ open-black {
 open-black a {
   color: black;
 }
-.full {
-  max-width: 3000px;
-  background-color: white;
-}
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
   .full {
@@ -231,27 +227,26 @@ open-black a {
 }
 }
 .photo-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .photo {
-      width: 480px;
-      height: 480px;
-    }
-    .main {
-        max-width: 2100px;
-        margin: auto;
-    }
-    .load-more-btn {
-        float: right;
-        background-color: #f3cb74;
-        border-radius: 25px;
-        font-size: 70px;
-        color:white;
-        margin-top: -30px;
-        margin-right: -20px;
-        padding: 5px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  height: auto;
+}
+.load-more-btn {
+  float: right;
+  background-color: #f3cb74;
+  border-radius: 25px;
+  font-size: 70px;
+  color:white;
+  margin-top: -30px;
+  margin-right: -20px;
+  padding: 5px;
+}
 </style>
 </head>
 <body>
