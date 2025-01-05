@@ -232,6 +232,33 @@ open-black a {
 }
 
 </style>
+<style>
+  /* Style for the pop-up */
+  .popup {
+      display: none; /* Hidden by default */
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #4d79ff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      z-index: 1000;
+      color: white;
+      border-radius: 20px;
+      text-align: center;
+  }
+
+  .popup-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  button {
+      margin-top: 10px;
+  }
+</style>
 </head>
 <body>
   <div class="full">
@@ -241,6 +268,7 @@ open-black a {
       <li><a> | </a></li>
       <li><a href="https://madebydanny.co.uk">Worldwide</a></li>
       <li><a href="https://us.madebydanny.uk">US</a></li>
+      <li><a href="https://ca.madebydanny.uk">Canada</a></li>
       <li><a> | </a></li>
       <li><a href="/ai.html">AI</a></li>
       <li><a href="/developer.html">Developer</a></li>
@@ -327,6 +355,16 @@ open-black a {
       <p><a href="https://youtube.com/@MadeByDanny">YouTube</a> | <a href="https://therealfuntimeswithdanny">Github</a> | <a href="https://twitch.tv/funtimeswithdanny">Twitch</a> | <a href="https://reddit.com/u/funtimeswithdanny">Reddit</a></p>
     </div>
   </div>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+        <h1>Your On The UK Site</h1>
+        <p>You are viewing the UK site.<br>The UK site gets the first Updates and Features</p>
+        <p><a href="https://us.madebydanny.uk">Switch to US Site</a> | <a href="https://ca.madebydanny.uk">Switch To Canada Site</a></p>
+        <p><a href="madebydanny.co.uk">Not in The US, Canada or The UK</a></p>
+        <button id="neverShowAgain">Never Show Again</button>
+        <button id="closePopup">Close</button>
+    </div>
+</div>
 </body>
 <script>
   // Get the button
@@ -348,5 +386,27 @@ open-black a {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+</script>
+<script>
+  // Function to show the pop-up
+  function showPopup() {
+      if (!localStorage.getItem('neverShowPopup')) {
+          document.getElementById('popup').style.display = 'block';
+      }
+  }
+
+  // Event listener for "Never Show Again" button
+  document.getElementById('neverShowAgain').addEventListener('click', function () {
+      localStorage.setItem('neverShowPopup', 'true');
+      document.getElementById('popup').style.display = 'none';
+  });
+
+  // Event listener for "Close" button
+  document.getElementById('closePopup').addEventListener('click', function () {
+      document.getElementById('popup').style.display = 'none';
+  });
+
+  // Show the pop-up when the page loads
+  window.onload = showPopup;
 </script>
 </html>
