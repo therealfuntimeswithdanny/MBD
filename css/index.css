@@ -89,7 +89,8 @@
     display: table-cell;
     padding: 16px;
     color: white;
-    min-height: 700px;
+    min-width: 100%;
+    width: auto
   }
   .thrid h2 {
     padding-left: 20px;
