@@ -168,6 +168,16 @@
       <h1>Made By Danny</h1>
       <h3>&copy; 2024-25 Made By Danny UK | Performance & Security by Cloudflare</h3>
       <h4>Made With Help From Linus Tech Tips Forum, Coding2Go, Microsoft Copilot, W3Schools and Github</h4>
+      <h4><div id="repoInfo">Connecting to api.github.com</div>
+    
+        <script>
+            fetch('https://api.github.com/repos/therealfuntimeswithdanny/MBD')
+                .then(response => response.json())
+                .then(data => {
+                    const lastUpdated = new Date(data.updated_at).toLocaleString();
+                    document.getElementById('repoInfo').innerText = `Last Updated at: ${lastUpdated}`;
+                });
+        </script></h4>
       <h5><a>Github</a> | <a>Reddit</a> | <a>Yotube</a> | <a>Twitch</a></h5>
     </div>
   </main>
