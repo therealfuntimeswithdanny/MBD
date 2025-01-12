@@ -60,7 +60,7 @@ body{
     fill: var(--accent-clr);
   }
 }
-a {
+h1 a {
   color: white;
   text-decoration: none;
 }
